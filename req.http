@@ -1,0 +1,31 @@
+@server=http://localhost:3000
+
+###
+GET {{server}}/
+
+###
+POST {{server}}/
+Content-Type: application/json
+
+{
+    "title":"Hello world3",
+    "name":"John Doe3",
+    "text":"This is a test post3"
+}
+
+###
+GET {{server}}/posts/5
+
+
+###
+PATCH  {{server}}/posts/5
+Content-Type: application/json
+
+{
+    "title":"Modify Hello world3",
+    "text":"Modify Hello world3"
+    
+}
+###
+
+DELETE {{server}}/posts/4
